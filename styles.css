@@ -1,8 +1,9 @@
+
 #date
 {
     z-index: 1;
-    position: relative;
-    top:  1%;
+    position: absolute;
+    top:   1%;
     left: 1%;
     width: 300px;
     color:  #040404;
@@ -13,7 +14,7 @@
 }
 
 .fancy {
-    position: relative;
+    position: absolute;
     background-color: #ffc;
     padding: 2rem;
     text-align: center;
@@ -24,7 +25,8 @@
 
 .fancy::before {
     content: "";
-    position: relative;
+
+    position: absolute;
     z-index: -1;
     bottom: 15px;
     right: 5px;
@@ -40,7 +42,7 @@
 
 .ueberschrift5
 {
-    position: relative;
+    position: absolute;
     right: 43%;
     top:   350px;
     width: 300px;
@@ -57,13 +59,13 @@ p
     right: 50%;
     top: 50px;
     width:300px;
-
+   
 }
 #Ueberschrift
 {
     color:  #000000;
 }
-.logo
+.logo 
 {
     position:absolute;
     right: 10%;
@@ -78,30 +80,35 @@ p
 }
 body
 {
-    float:left;
-    /*display:flex;*/
+    display:flex;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    /*background-image: url('pictures/Plakat.JPG');*/
+   /* background-image: url('Logo_01.PNG');*/
     font-family: 'Nunito', serif;
-    background-size:auto;
+    background-size:cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 .poster
 {
-text-align: center;
-max-width:100%;
-height: auto;
+    z-index: -1;
+	position: absolute;
+  
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
 
+   
+	
 }
 .navigation
 {
-
-    width: 420px;
-    height: 70px;
+    width: 500px;
+    height: 80px;
     background: #ababab;
     position: relative;
-    margin-bottom: 11%;
+    margin-bottom: -5%;
     margin-right: 1%;
     display: flex;
     justify-content:center;
@@ -124,7 +131,7 @@ height: auto;
     height: 70px;
     z-index: 1;
     flex-direction: row;
-
+    
 
 }
 .navigation ul li a
@@ -137,14 +144,14 @@ height: auto;
     width: 100%;
     text-align: center;
     font-weight: 500;
-
+   
 }
-.navigation ul li a .icon
+.navigation ul li a .icon	
 {
     position: relative;
     display: block;
     line-height: 75px;
-    font-size: 1.5em;
+    font-size: 3em;
     text-align: center;
     transition: 0.5s;
     color: var(--clr);
@@ -158,9 +165,9 @@ height: auto;
 .navigation ul li a .text
 {
     position: absolute;
-    color: var(--clr);
+    color: var(--clr);  
     font-weight: 400;
-    font-size: 0.75em;
+    font-size: 1em;
     letter-spacing: 0.05em;
     transition: 0.5s;
     opacity: 0;
@@ -171,3 +178,4 @@ height: auto;
     opacity: 1;
     transform: translateY(10px);
 }
+
