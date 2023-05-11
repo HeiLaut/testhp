@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@1,300&family=Nunito:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Startseite</title>
+
+</head>
+<style>
+    .text-doc2{
+        color:  #fff;
+
+    }
+
+    :root
+    {
+        --clr:  #222327;
+    }
+
+    body
+    {
+        display:flex;
+        justify-content: left;
+        align-items: start;
+        min-height: 100vh;
+        background: var(--clr);
+        font-family: 'Nunito', serif;
+    }
+    .navigation
+    {
+        width: 80px;
+        height: 80px;
+        background: #fff;
+        position:relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+    }
+    .navigation ul
+    {
+        display: flex;
+        width: 80px;
+        height: 80px;
+        padding: 90px;
+        align-items: center;
+        align-content: center;
+    }
+    .navigation ul li
+    {
+        position: relative;
+        list-style: none;
+        width: 30px;
+        height: 30px;
+        z-index: 0;
+    }
+    .navigation ul li a
+    {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        text-align: center;
+        font-weight: 500;
+
+    }
+    .navigation ul li a .icon
+    {
+        position: relative;
+        display: flex;
+        line-height: 75px;
+        font-size: 1.5em;
+        text-align: center;
+        transition: 0.5s;
+        color: var(--clr);
+    }
+    .navigation ul li:hover a .icon
+    {
+        transform: translateY(-35px);
+        opacity: 0;
+    }
+    .navigation ul li a .text
+    {
+        position: absolute;
+        color: var(--clr);
+        font-weight: 400;
+        font-size: 0.75em;
+        letter-spacing: 0.02em;
+        transition: 0.5s;
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    .navigation ul li:hover a .text
+    {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+
+</style>
+
+
+
+<body>
+<div class="navigation">
+    <ul>
+        <li class="list active">
+            <a href="index.html">
+                 <span class="icon">
+                    <ion-icon name="home-outline"></ion-icon>
+                 </span>
+                <span class="text">Mainpage</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div class="text-doc2" style="font-family: 'Nunito', serif">
+    <p2>
+        <br><br><br> <br> <br>
+        <h1><strong>Herzlich Willkommen in Garnigs</strong></h1>
+        <hr><br>
+        <h4>
+            Garnigs – das ist unser neuer Staat. Unsere gesamte Schule, alle Lehrer*innen,
+            alle Schüler*innen, bilden für fünf Tage ein funktionierendes Staatssystem.
+            Dabei verwandeln wir die Schule in einen demokratischen Staat in der Zeit vom 26. – 30.06.2023.
+            <br><br>
+            Gemeinsam bauen Schüler*innen und Lehrer*innen einen funktionsfähigen Staat auf,
+            mit allem was dazugehört. Wie im realen Leben gibt es bei uns eine Regierung, Behörden,
+            Verwaltung, Justiz, Vollzugsorgane, Wirtschaft, Kulturwesen, Banken, eigene Währung,
+            Staatsflagge und Staatshymne sowie natürlich seine Bürger*innen.
+            Grundlage des Staates ist seine Verfassung, die ordnungsgemäß vom Parlament verabschiedet wird.
+            <br><br>
+            Alle Bürger*innen müssen für ihren Lebensunterhalt aufkommen:
+            Sie werden Arbeitgeber*innen oder Arbeitnehmer*innen, sie versuchen als Angestellte
+            des Staates Einkommen zu erwerben, machen sich selbständig, werden Bankangestellte
+            oder Künstler*innen.
+            <br><br>
+            Das schulumfassende Großprojekt „Schule als Staat“ bietet uns die Möglichkeit,
+            moderne didaktische Ansätze wie Projektmethode, Planspiel und Handlungsorientierung
+            mit einem faszinierenden Versuch des Demokratielernens zu verbinden.
+            <br><br>
+            Auf unserer Homepage findet Ihr alle Informationen rund um das Projekt:
+            Garnigs - Schule als Staat. Bei Fragen, Anregungen, Wünschen oder Sorgen
+            schreibt einfach an <a href="mailto:garnigs@igs-halle.de"> garnigs@igs-halle.de</a>
+            <br><br>
+            Wir wünschen euch viel Spaß beim Surfen und Erkunden der neuen Homepage!
+
+        </h4> <br>
+
+    </p2>
+</div>
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
